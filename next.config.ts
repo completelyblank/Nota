@@ -3,7 +3,7 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   experimental: {
-    serverActions: true,
+    serverActions: false,
   },
   // Other config options
 };
