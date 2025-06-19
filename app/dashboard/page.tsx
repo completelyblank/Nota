@@ -32,25 +32,35 @@ export default async function Dashboard() {
             'url(https://c0.wallpaperflare.com/preview/700/360/51/bible-wallpaper-devotional-bible-study.jpg)',
         }}
       />
-
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-70 z-10" />
+      {/* Top-right Buttons */}
+      <div className="absolute top-6 right-6 z-30 flex gap-4">
+        {/* Transcript */}
+        <form action="/marks" method="post">
+          <button
+            type="submit"
+            className="z-30 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 hover:from-blue-800 hover:via-blue-900 hover:to-black text-white px-4 py-2 rounded-lg font-medium transition-all duration-300 shadow-md"
+          >
+            Transcript
+          </button>
+        </form>
+
+        {/* Logout */}
+        <form action="/api/logout" method="post">
+          <button
+            type="submit"
+            className="bg-gradient-to-r from-red-600 via-red-700 to-red-800 hover:from-red-800 hover:via-red-900 hover:to-black text-white px-4 py-2 rounded-lg font-medium transition-all duration-300 shadow-md z-30"
+          >
+            Logout
+          </button>
+        </form>
+      </div>
+
 
       {/* Content */}
       <div className="relative z-20 px-6 py-12 min-h-screen flex items-center justify-center">
         <div className="w-full max-w-7xl space-y-16">
-
-          {/* Logout */}
-          <div className="absolute top-6 right-6">
-            <form action="/api/logout" method="post">
-              <button
-                type="submit"
-                className="bg-gray-700 hover:bg-red-600 text-white px-4 py-2 rounded-lg font-medium transition"
-              >
-                Logout
-              </button>
-            </form>
-          </div>
 
           {/* Header */}
           <div className="text-center space-y-2">
@@ -155,4 +165,5 @@ export default async function Dashboard() {
       </div>
     </div>
   );
+
 }
