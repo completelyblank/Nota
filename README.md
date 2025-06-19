@@ -10,9 +10,7 @@ A fullstack application built with **Next.js (App Router)** and **Supabase**, en
 
 | Student View | Teacher View |
 |--------------|--------------|
-| ![Student Dashboard](<img width="949" alt="fourth" src="https://github.com/user-attachments/assets/efef99c7-a910-4247-b018-b56357bd5b48" />
- | ![Teacher Dashboard](<img width="949" alt="seventh" src="https://github.com/user-attachments/assets/4c189f73-0977-43cc-8c3c-53c87927efa8" />
-|
+| ![Student Dashboard](https://github.com/user-attachments/assets/efef99c7-a910-4247-b018-b56357bd5b48) | ![Teacher Dashboard](https://github.com/user-attachments/assets/4c189f73-0977-43cc-8c3c-53c87927efa8) |
 
 ---
 
